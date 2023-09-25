@@ -19,3 +19,5 @@ namespace FinalProj.Domain.Entities
         public decimal? Total { get; set; }
     }
 }
+
+// Prueba de push

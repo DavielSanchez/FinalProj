@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FAbkopsdGb1yhwaHbcPnnY/zSjdUCaM5CbHMTw/7oNOwTJ8AjPNkvNh8aDeb8CQlcOyKiSoCNiHP8QK9HMelwQ==",
+  "dgSpecHash": "CdWf3BhscaGZAfRPLh0EXyU86cY8dpqUxv86JUmEoSxbQvYvP3tKhP/lVUw9nbLUA6rgeOsAYNU8kkguMDziWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj",
+  "projectFilePath": "C:\\salesproject\\sales\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

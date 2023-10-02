@@ -18,7 +18,7 @@ namespace FinalProj.Domain.Core
         public int? idUsuarioModifico { get; set; }
         public int? idUsuarioElimino { get; set; }
         public DateTime? FechaElimino { get; set; }
-        bool Elimino { get; set; }
+        public bool Elimino { get; set; }
 
     }
 }

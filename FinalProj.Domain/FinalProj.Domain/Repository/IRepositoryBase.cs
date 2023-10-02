@@ -8,7 +8,7 @@ namespace FinalProj.Domain.Repository
         void Update(TEntity entity);
         void Remove(TEntity entity);
         List<TEntity> GetEntities();
-        TEntity GetEntityById(int id);
+        TEntity GetEntity(int Id);
 
     }
 }

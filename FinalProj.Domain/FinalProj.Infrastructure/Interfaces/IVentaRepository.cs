@@ -2,6 +2,7 @@
 using FinalProj.Domain.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace FinalProj.Infrastructure.Interfaces
@@ -9,14 +10,10 @@ namespace FinalProj.Infrastructure.Interfaces
     public interface IVentaRepository : IRepositoryBase<Venta>
     {
         // Aqui van los metodos exclusivos de la entidad Venta.
-        List<Venta> GetVentasByCliente (int idCliente);
-        List<Venta> GetVentasByDate (DateTime fecha);
+        List<Venta> GetVentasByIDCliente (int idCliente);
         List<Venta> GetVentasByProducto (int idProducto);
-        List<Venta> GetVentasByProductoAndDate (int idProducto, DateTime fecha);
-        List<Venta> GetVentasByClienteAndDate (int idCliente, DateTime fecha);
-        List<Venta> GetVentasByTotal (decimal total);       
+        bool Exists(Expression<Func<Venta, bool>> filter);
 
     }
 }
 
-// Prueba de push a mi branch.

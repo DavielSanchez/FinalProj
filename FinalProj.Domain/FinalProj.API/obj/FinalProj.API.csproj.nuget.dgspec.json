@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj": {}
+    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj": {
+    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
+        "projectUniqueName": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
         "projectName": "FinalProj.API",
-        "projectPath": "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
+        "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
         "packagesPath": "C:\\Users\\Samil Quezada Suriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samil Quezada Suriel\\Documents\\UNIVERSIDAD ITLA\\4to CUATRIMESTRE\\PROGRAMACION II - FRANCIS RAMIREZ\\Proyecto Final\\FinalProj.Domain\\FinalProj.API\\obj\\",
+        "outputPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,66 +1,53 @@
 ﻿using FinalProj.Domain.Entities;
-using FinalProj.Infrastructure.Interfaces;
+using FinalProj.Domain.Repository;
+using FinalProj.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace FinalProj.Infrastructure.Repositories
 {
     public class VentaRepository : IVentaRepository
     {
-        public List<Venta> GetEntities()
+        private readonly SalesContext context;
+
+        public VentaRepository(SalesContext context)
         {
-            throw new NotImplementedException();
+            this.context = context;
         }
 
-        public Venta GetEntityById(int id)
+        public void Remove(Venta venta)
         {
-            throw new NotImplementedException();
+            this.context.Ventas.Remove(venta);
         }
 
-        public List<Venta> GetVentasByCliente(int idCliente)
+        public void Save(Venta venta)
         {
-            throw new NotImplementedException();
+            this.context.Ventas.Add(venta);
         }
 
-        public List<Venta> GetVentasByClienteAndDate(int idCliente, DateTime fecha)
+        public void Update(Venta venta)
         {
-            throw new NotImplementedException();
+            this.context.Ventas.Update(venta);
         }
 
-        public List<Venta> GetVentasByDate(DateTime fecha)
+        public bool Exists(Expression<Func<Venta, bool>> filter)
         {
-            throw new NotImplementedException();
+            return this.context.Ventas.Any(filter);
+
         }
 
-        public List<Venta> GetVentasByProducto(int idProducto)
+        public List<Venta> GetVentas()
         {
-            throw new NotImplementedException();
+            return this.context.Ventas.Where(vt => !vt.Elimino).ToList();
         }
 
-        public List<Venta> GetVentasByProductoAndDate(int idProducto, DateTime fecha)
+        public Venta GetVenta(int Id)
         {
-            throw new NotImplementedException();
+            return this.context.Ventas.Find(Id);
         }
 
-        public List<Venta> GetVentasByTotal(decimal total)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(Venta entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Save(Venta entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Venta entity)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

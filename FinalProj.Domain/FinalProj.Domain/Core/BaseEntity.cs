@@ -7,18 +7,18 @@ namespace FinalProj.Domain.Core
         public BaseEntity()
         {
             this.FechaRegistro = DateTime.Now;
-            this.FechaModificacion = DateTime.Now;
+            this.FechaMod = DateTime.Now;
             this.FechaElimino = DateTime.Now;
-            this.Elimino = false;
+            this.Eliminado = false;
         }
 
         public DateTime FechaRegistro { get; set; }
         public int idUsuarioCreacion { get; set; }
-        public DateTime? FechaModificacion { get; set; }
-        public int? idUsuarioModifico { get; set; }
+        public DateTime? FechaMod { get; set; }
+        public int? idUsuarioMod { get; set; }
         public int? idUsuarioElimino { get; set; }
         public DateTime? FechaElimino { get; set; }
-        public bool Elimino { get; set; }
+        public bool Eliminado { get; set; }
 
     }
 }

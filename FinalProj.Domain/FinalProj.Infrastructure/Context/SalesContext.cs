@@ -9,6 +9,6 @@ namespace FinalProj.Infrastructure.Context
         {
         }
     
-        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<Venta> Venta { get; set; }
     }
 }

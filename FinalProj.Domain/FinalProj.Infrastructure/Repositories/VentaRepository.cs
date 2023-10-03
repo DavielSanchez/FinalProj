@@ -20,33 +20,33 @@ namespace FinalProj.Infrastructure.Repositories
 
         public void Remove(Venta venta)
         {
-            this.context.Ventas.Remove(venta);
+            this.context.Venta.Remove(venta);
         }
 
         public void Save(Venta venta)
         {
-            this.context.Ventas.Add(venta);
+            this.context.Venta.Add(venta);
         }
 
         public void Update(Venta venta)
         {
-            this.context.Ventas.Update(venta);
+            this.context.Venta.Update(venta);
         }
 
         public bool Exists(Expression<Func<Venta, bool>> filter)
         {
-            return this.context.Ventas.Any(filter);
+            return this.context.Venta.Any(filter);
 
         }
 
         public List<Venta> GetVentas()
         {
-            return this.context.Ventas.Where(vt => !vt.Elimino).ToList();
+            return this.context.Venta.Where(vt => !vt.Eliminado).ToList();
         }
 
         public Venta GetVenta(int Id)
         {
-            return this.context.Ventas.Find(Id);
+            return this.context.Venta.Find(Id);
         }
 
     }

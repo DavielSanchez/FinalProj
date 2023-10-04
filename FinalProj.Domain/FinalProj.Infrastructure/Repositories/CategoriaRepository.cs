@@ -1,62 +1,52 @@
 ﻿using FinalProj.Domain.Entities;
-using FinalProj.Infrastructure.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using FinalProj.Infrastructure.Context;
+using FinalProj.Domain.Repository;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Linq.Expressions;
+
 
 namespace FinalProj.Infrastructure.Repositories
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-        public List<Categoria> GetEntities()
+        private readonly SalesContext context;
+
+        public CategoriaRepository(SalesContext context)
         {
-            throw new NotImplementedException();
+            this.context = context;
         }
 
-        public Categoria GetEntityById(int id)
+        public void Save(Categoria categoria)
         {
-            throw new NotImplementedException();
+            this.context.Categoria.Add(categoria);
         }
 
-        public List<Categoria> GetCategoriasByDescripcion(string descripcion)
+        public void Update(Categoria categoria)
         {
-
-            throw new NotImplementedException();
+            this.context.Categoria.Update(categoria);
         }
 
-        public List<Categoria> GetCategoriasByEstado(bool esActivo)
+        public void Remove(Categoria categoria)
         {
-
-            throw new NotImplementedException();
+            this.context.Categoria.Remove(categoria);
         }
 
-        public List<Categoria> GetCategoriasByFechaRegistro(DateTime fechaRegistro)
+        public List<Categoria> GetCategorias()
         {
-
-            throw new NotImplementedException();
+            return this.context.Categoria.Where(st => !st.Eliminado).ToList();
         }
 
-
-        public List<Categoria> GetCategoriasByProductoId(int idProducto)
+        public Categoria GetCategoria(int Id)
         {
-
-            throw new NotImplementedException();
+            return this.context.Categoria.Find(Id);
         }
 
-
-        public void Remove(Categoria entity)
+        public bool Exists(Expression<Func<Categoria, bool>> filter)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Save(Categoria entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Categoria entity)
-        {
-            throw new NotImplementedException();
+            return this.context.Categoria.Any(filter);
         }
     }
 }

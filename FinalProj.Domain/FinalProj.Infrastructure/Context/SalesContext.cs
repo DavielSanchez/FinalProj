@@ -7,8 +7,9 @@ namespace FinalProj.Infrastructure.Context
     {
         public SalesContext(DbContextOptions<SalesContext> options) : base(options)
         {
+
         }
-    
-        public DbSet<Venta> Ventas { get; set; }
+
+        public DbSet<Categoria> Categoria { get; set; }
     }
 }

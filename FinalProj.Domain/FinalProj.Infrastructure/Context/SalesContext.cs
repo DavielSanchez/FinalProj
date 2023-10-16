@@ -1,5 +1,4 @@
-﻿using FinalProj.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace FinalProj.Infrastructure.Context
 {
@@ -10,5 +9,6 @@ namespace FinalProj.Infrastructure.Context
         }
     
         public DbSet<Venta> Ventas { get; set; }
+        public object Negocio { get; internal set; }
     }
 }

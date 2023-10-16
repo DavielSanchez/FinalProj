@@ -6,15 +6,13 @@ using System.Linq.Expressions;
 
 namespace FinalProj.Infrastructure.Interfaces
 {
-    public interface INegocioRepository : IRepositoryBase<Negocio>
+    public interface IVentaRepository : IRepositoryBase<Negocio>
     {
-        List<Negocio> GetNegociosByUsuario(int idUsuario);
-        List<Negocio> GetStockbyNegocio(int stock, int IdNegocio);
-        List<Negocio> GeturLImageByNegocio(string urlImama, int IdNegocio);
-        List<Negocio> GetEsActivoByNegocio(int idNegocio, bool EsActivo);
-        List<Negocio> GetCategoriabyNegocio(int Negocio);
-
-
-
+        // Aqui van los metodos exclusivos de la entidad Negocio.
+        List<Negocio> GetNegocioByIDUsuario(int idUsuario);
+        List<Negocio> GetNegocioByCategoria(int idCategoria);
+        bool Exists(Expression<Func<Negocio, bool>> filter);
 
     }
+
+}

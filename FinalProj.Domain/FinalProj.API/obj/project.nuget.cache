@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lj3Ctql1E2uNYBUXc1FuJ7rt6tjGxfKkDbvkx4S7mDi4xCmDFpcp3L69ZSwjpXD/VUGPNsxa/LmAg8Ntnat52w==",
+  "dgSpecHash": "tGv/jILMHwB6qqMG4Dlbyj/sZOnuW8sBJenRaVqn9UnnBS1g7rd9q/OD4+LZvdeAypEquyOE/Lb1zGCfdYQxbA==",
   "success": true,
-  "projectFilePath": "C:\\﻿SalesProject\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
+  "projectFilePath": "C:\\SalesProject2\\Sales\\FinalProj.Domain\\FinalProj.API\\FinalProj.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

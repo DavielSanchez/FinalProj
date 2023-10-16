@@ -14,7 +14,6 @@ namespace FinalProj.Domain.Entities
         public string? Nombre { get; set; }
         public string? Correo { get; set; }
         public string? Direccion { get; set; }
-        public  new string? FechaRegistro { get; set; }
         public string? Telefono { get; set; }
         public decimal? PorcentajeImpuesto { get; set; }
         public string? SimboloMoneda { get; set; }

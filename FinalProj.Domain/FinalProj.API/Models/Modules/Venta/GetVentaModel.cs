@@ -2,7 +2,7 @@
 {
     public class GetVentaModel
     {
-        public int idUsuario { get; set; }
+        public int? idUsuario { get; set; }
         public int? idTipoDocumentoVenta { get; set; }
         public string? DocumentoCliente { get; set; }
         public string? NombreCliente { get; set; }

@@ -24,7 +24,7 @@ namespace FinalProj.API.Controllers
             var ventas = this.ventaRepository.GetEntities().
                                               Select(vt => new GetVentaModel()
                                               {
-
+                                                  idUsuario = vt.idUsuario,
                                                   idTipoDocumentoVenta = vt.idTipoDocumentoVenta,
                                                   DocumentoCliente = vt.DocumentoCliente,
                                                   NombreCliente = vt.NombreCliente,
@@ -101,9 +101,7 @@ namespace FinalProj.API.Controllers
 
 
 
-            });
-
-            
+            });            
 
             return Ok();
         }

@@ -1,5 +1,6 @@
 using FinalProj.Domain.Repository;
 using FinalProj.Infrastructure.Context;
+using FinalProj.Infrastructure.Interfaces;
 using FinalProj.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 

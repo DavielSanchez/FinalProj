@@ -1,5 +1,6 @@
-﻿using FinalProj.Domain.Entities;
-using FinalProj.Domain.Repository;
+﻿using FinalProj.API.Models.Modules.Venta;
+using FinalProj.Domain.Entities;
+using FinalProj.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -17,37 +18,96 @@ namespace FinalProj.API.Controllers
             this.ventaRepository = ventaRepository;
         }
 
-        // GET: api/<VentaController>
-        [HttpGet]
-        public IEnumerable<Venta> Get()
+        [HttpGet("GetVentas")]
+        public IActionResult Get()
         {
-            var ventas = this.ventaRepository.GetVentas();
-            return ventas;
+            var ventas = this.ventaRepository.GetEntities().
+                                              Select(vt => new GetVentaModel()
+                                              {
+
+                                                  idTipoDocumentoVenta = vt.idTipoDocumentoVenta,
+                                                  DocumentoCliente = vt.DocumentoCliente,
+                                                  NombreCliente = vt.NombreCliente,
+                                                  SubTotal = vt.SubTotal,
+                                                  ImpuestoTotal = vt.ImpuestoTotal,
+                                                  Total = vt.Total
+
+                                              });
+
+            return Ok(ventas);
         }
 
-        // GET api/<VentaController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+
+        [HttpGet("GetVenta")]
+        public IActionResult Get(int id)
         {
-            return "value";
+            var venta = this.ventaRepository.GetEntity(id);
+
+            GetVentaModel ventaModel = new GetVentaModel()
+            {
+                idTipoDocumentoVenta = venta.idTipoDocumentoVenta,
+                DocumentoCliente = venta.DocumentoCliente,
+                NombreCliente = venta.NombreCliente,
+                SubTotal = venta.SubTotal,
+                ImpuestoTotal = venta.ImpuestoTotal,
+                Total = venta.Total
+            };
+
+            return Ok(venta);
         }
 
-        // POST api/<VentaController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("SaveVenta")]
+        public IActionResult Post([FromBody] VentaAppModel ventaApp)
         {
+
+            this.ventaRepository.Save(new Venta()
+            {
+                FechaRegistro = ventaApp.ChanageDate,
+                idUsuarioCreacion = ventaApp.ChangeUser,
+                numeroVenta = ventaApp.numeroVenta,
+                idUsuario = ventaApp.idUsuario,
+                idTipoDocumentoVenta = ventaApp.idTipoDocumentoVenta,
+                DocumentoCliente = ventaApp.DocumentoCliente,
+                NombreCliente = ventaApp.NombreCliente,
+                SubTotal = ventaApp.SubTotal,
+                ImpuestoTotal = ventaApp.ImpuestoTotal,
+                Total = ventaApp.Total,
+
+            });
+
+            
+
+            return Ok();
         }
 
-        // PUT api/<VentaController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPost("UpdateVenta")]
+        public IActionResult Put([FromBody] VentaUpdateModel ventaUpdate)
         {
+
+            this.ventaRepository.Update(new Venta()
+            {
+
+                FechaMod = ventaUpdate.ChanageDate,
+                idUsuarioMod = ventaUpdate.ChangeUser,
+                numeroVenta = ventaUpdate.numeroVenta,
+                idUsuario = ventaUpdate.idUsuario,
+                idTipoDocumentoVenta = ventaUpdate.idTipoDocumentoVenta,
+                DocumentoCliente = ventaUpdate.DocumentoCliente,
+                NombreCliente = ventaUpdate.NombreCliente,
+                SubTotal = ventaUpdate.SubTotal,
+                ImpuestoTotal = ventaUpdate.ImpuestoTotal,
+                Total = ventaUpdate.Total,
+                id = ventaUpdate.id
+
+
+
+            });
+
+            
+
+            return Ok();
         }
 
-        // DELETE api/<VentaController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+
     }
 }

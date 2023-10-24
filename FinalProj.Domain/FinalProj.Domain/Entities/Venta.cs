@@ -1,7 +1,4 @@
 ﻿using FinalProj.Domain.Core;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FinalProj.Domain.Entities
 {
@@ -19,5 +16,3 @@ namespace FinalProj.Domain.Entities
         public decimal? Total { get; set; }
     }
 }
-
-// Prueba de push

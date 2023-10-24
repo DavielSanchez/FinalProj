@@ -7,13 +7,11 @@ using System.Text;
 
 namespace FinalProj.Infrastructure.Interfaces
 {
-    public interface IVentaRepository : IRepositoryBase<Venta>
+    public interface IVentaRepository : IBaseRepository<Venta>
     {
         // Aqui van los metodos exclusivos de la entidad Venta.
-        List<Venta> GetVentasByIDCliente (int idCliente);
-        List<Venta> GetVentasByProducto (int idProducto);
-        bool Exists(Expression<Func<Venta, bool>> filter);
-
+        List<Venta> GetVentasByCliente (string Cliente);
+        
     }
 }
 

@@ -1,52 +1,55 @@
 ﻿using FinalProj.Domain.Entities;
 using FinalProj.Domain.Repository;
 using FinalProj.Infrastructure.Context;
-using System;
+using FinalProj.Infrastructure.Core;
+using FinalProj.Infrastructure.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 
 namespace FinalProj.Infrastructure.Repositories
 {
-    public class VentaRepository : IVentaRepository
+    public class VentaRepository : BaseRepository<Venta>, IVentaRepository
     {
         private readonly SalesContext context;
 
-        public VentaRepository(SalesContext context)
+        public VentaRepository(SalesContext context) : base(context)
         {
             this.context = context;
         }
 
-        public void Remove(Venta venta)
+        public List<Venta> GetVentasByCliente(string Cliente)
         {
-            this.context.Venta.Remove(venta);
+            return this.context.Venta.Where(vt => vt.NombreCliente == Cliente
+                                             && !vt.Eliminado).ToList();
+        }
+        public override List<Venta> GetEntities()
+        {
+            return base.GetEntities().Where(vt => !vt.Eliminado).ToList();
         }
 
-        public void Save(Venta venta)
+        public override void Save(Venta entity)
         {
-            this.context.Venta.Add(venta);
+            context.Venta.Add(entity);           
+            context.SaveChanges();
         }
-
-        public void Update(Venta venta)
+        public override void Update(Venta entity)
         {
-            this.context.Venta.Update(venta);
-        }
+            var ventaToUpdate = base.GetEntity(entity.id);
+            ventaToUpdate.id = entity.id;
+            ventaToUpdate.numeroVenta = entity.numeroVenta;
+            ventaToUpdate.idTipoDocumentoVenta = entity.idTipoDocumentoVenta;
+            ventaToUpdate.idUsuario = entity.idUsuario;            
+            ventaToUpdate.DocumentoCliente = entity.DocumentoCliente;
+            ventaToUpdate.NombreCliente = entity.NombreCliente;
+            ventaToUpdate.SubTotal = entity.SubTotal;
+            ventaToUpdate.ImpuestoTotal = entity.ImpuestoTotal;           
+            ventaToUpdate.Total = entity.Total;     
+            
+            ventaToUpdate.FechaMod = entity.FechaMod;
+            ventaToUpdate.idUsuarioMod = entity.idUsuarioMod;
 
-        public bool Exists(Expression<Func<Venta, bool>> filter)
-        {
-            return this.context.Venta.Any(filter);
-
-        }
-
-        public List<Venta> GetVentas()
-        {
-            return this.context.Venta.Where(vt => !vt.Eliminado).ToList();
-        }
-
-        public Venta GetVenta(int Id)
-        {
-            return this.context.Venta.Find(Id);
+            context.Venta.Update(ventaToUpdate);
+            context.SaveChanges();
         }
 
     }

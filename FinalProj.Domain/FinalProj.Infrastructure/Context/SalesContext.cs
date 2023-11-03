@@ -10,5 +10,6 @@ namespace FinalProj.Infrastructure.Context
         }
     
         public DbSet<Venta> Venta { get; set; }
+        public DbSet<TipoDocumentoVenta> TipoDocumentoVenta { get; set; }
     }
 }

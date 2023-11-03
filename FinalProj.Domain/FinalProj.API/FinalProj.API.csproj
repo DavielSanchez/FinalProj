@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FinalProj.Application\FinalProj.Application.csproj" />
     <ProjectReference Include="..\FinalProj.Infrastructure\FinalProj.Infrastructure.csproj" />
+    <ProjectReference Include="..\FinalProj.IOC\FinalProj.IOC.csproj" />
   </ItemGroup>
 
 </Project>

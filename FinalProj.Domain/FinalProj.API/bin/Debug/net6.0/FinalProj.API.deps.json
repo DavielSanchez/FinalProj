@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "FinalProj.API/1.0.0": {
         "dependencies": {
+          "FinalProj.Application": "1.0.0",
+          "FinalProj.IOC": "1.0.0",
           "FinalProj.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -979,6 +981,16 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "FinalProj.Application/1.0.0": {
+        "dependencies": {
+          "FinalProj.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.32",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "FinalProj.Application.dll": {}
+        }
+      },
       "FinalProj.Domain/1.0.0": {
         "runtime": {
           "FinalProj.Domain.dll": {}
@@ -992,6 +1004,16 @@
         },
         "runtime": {
           "FinalProj.Infrastructure.dll": {}
+        }
+      },
+      "FinalProj.IOC/1.0.0": {
+        "dependencies": {
+          "FinalProj.Application": "1.0.0",
+          "FinalProj.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.32"
+        },
+        "runtime": {
+          "FinalProj.IOC.dll": {}
         }
       }
     }
@@ -1730,12 +1752,22 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "FinalProj.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "FinalProj.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "FinalProj.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FinalProj.IOC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

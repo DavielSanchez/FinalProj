@@ -1,10 +1,10 @@
 ﻿using FinalProj.Domain.Core;
+using System;
 
 namespace FinalProj.Domain.Entities
 {
     public class Venta : BaseEntity
     {
-
         public int id { get; set; }
         public string? numeroVenta { get; set; }
         public int? idTipoDocumentoVenta { get; set; }
@@ -14,5 +14,6 @@ namespace FinalProj.Domain.Entities
         public decimal? SubTotal { get; set; }
         public decimal? ImpuestoTotal { get; set; }
         public decimal? Total { get; set; }
+
     }
 }

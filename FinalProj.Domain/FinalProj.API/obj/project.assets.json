@@ -1779,6 +1779,21 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "FinalProj.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "FinalProj.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.32",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/FinalProj.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProj.Application.dll": {}
+        }
+      },
       "FinalProj.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -1802,6 +1817,21 @@
         },
         "runtime": {
           "bin/placeholder/FinalProj.Infrastructure.dll": {}
+        }
+      },
+      "FinalProj.IOC/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "FinalProj.Application": "1.0.0",
+          "FinalProj.Infrastructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.32"
+        },
+        "compile": {
+          "bin/placeholder/FinalProj.IOC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinalProj.IOC.dll": {}
         }
       }
     }
@@ -6318,6 +6348,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "FinalProj.Application/1.0.0": {
+      "type": "project",
+      "path": "../FinalProj.Application/FinalProj.Application.csproj",
+      "msbuildProject": "../FinalProj.Application/FinalProj.Application.csproj"
+    },
     "FinalProj.Domain/1.0.0": {
       "type": "project",
       "path": "../FinalProj.Domain/FinalProj.Domain.csproj",
@@ -6327,10 +6362,17 @@
       "type": "project",
       "path": "../FinalProj.Infrastructure/FinalProj.Infrastructure.csproj",
       "msbuildProject": "../FinalProj.Infrastructure/FinalProj.Infrastructure.csproj"
+    },
+    "FinalProj.IOC/1.0.0": {
+      "type": "project",
+      "path": "../FinalProj.IOC/FinalProj.IOC.csproj",
+      "msbuildProject": "../FinalProj.IOC/FinalProj.IOC.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FinalProj.Application >= 1.0.0",
+      "FinalProj.IOC >= 1.0.0",
       "FinalProj.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -6370,8 +6412,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj": {
+              "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj"
+            },
             "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Infrastructure\\FinalProj.Infrastructure.csproj": {
               "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Infrastructure\\FinalProj.Infrastructure.csproj"
+            },
+            "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.IOC\\FinalProj.IOC.csproj": {
+              "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.IOC\\FinalProj.IOC.csproj"
             }
           }
         }
@@ -6410,7 +6458,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

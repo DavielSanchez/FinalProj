@@ -3,6 +3,7 @@ using FinalProj.Infrastructure.Context;
 using FinalProj.Infrastructure.Interfaces;
 using FinalProj.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using FinalProj.IOC.Dependencies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,9 @@ builder.Services.AddDbContext<SalesContext>(options => options.UseSqlServer(buil
 
 // Dependencia de los repositorios.
 
-builder.Services.AddTransient<IVentaRepository, VentaRepository>();
+// Dependencias del Modulo de Ventas.
+builder.Services.AddVentaDependecy();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

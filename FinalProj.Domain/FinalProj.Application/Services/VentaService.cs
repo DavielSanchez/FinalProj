@@ -95,6 +95,29 @@ namespace FinalProj.Application.Services
 
             try
             {
+
+                if (dtoAdd.NombreCliente.Length > 20)
+                {
+                    result.Message = "El nombre del cliente no puede ser mayor a 20 caracteres.";
+                    result.Success = false;
+                    return result;
+                } 
+
+                if(dtoAdd.DocumentoCliente.Length > 10)
+                {
+                    result.Message = "El documento del cliente no puede ser mayor a 10 caracteres.";
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoAdd.SubTotal <= 0)
+                {
+                    result.Message = "El subtotal no puede ser menor a 0.";
+                    result.Success = false;
+                    return result;
+                }
+
+
                 Venta venta = new Venta()
                 {
 
@@ -133,6 +156,28 @@ namespace FinalProj.Application.Services
 
             try
             {
+
+                if(dtoUpdate.NombreCliente?.Length > 20)
+                {
+                    result.Message = "El nombre del cliente no puede ser mayor a 20 caracteres.";
+                    result.Success = false;
+                    return result;
+                }
+
+                if (dtoUpdate.DocumentoCliente?.Length > 10)
+                {
+                    result.Message = "El documento del cliente no puede ser mayor a 10 caracteres.";
+                    result.Success = false;
+                    return result;
+                }
+
+                if(int.TryParse(dtoUpdate.id.ToString(), out int id) == false)
+                {
+                    result.Message = "El id de la venta no es valido.";
+                    result.Success = false;
+                    return result;
+                }
+
                 Venta venta = new Venta()
                 {
                     id = dtoUpdate.id,

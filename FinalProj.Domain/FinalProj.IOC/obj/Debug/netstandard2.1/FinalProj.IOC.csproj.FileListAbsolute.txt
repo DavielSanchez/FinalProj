@@ -12,6 +12,7 @@ C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\Fi
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.AssemblyInfoInputs.cache
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.AssemblyInfo.cs
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.csproj.CoreCompileInputs.cache
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.sourcelink.json
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.csproj.CopyComplete
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.dll
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.pdb

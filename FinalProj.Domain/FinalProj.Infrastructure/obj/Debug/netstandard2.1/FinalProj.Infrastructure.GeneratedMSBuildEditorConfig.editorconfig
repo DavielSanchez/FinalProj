@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = FinalProj.Infrastructure
 build_property.ProjectDir = C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Infrastructure\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

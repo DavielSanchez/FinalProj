@@ -12,8 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Dependencia del Contexto de la base de datos.
 builder.Services.AddDbContext<SalesContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SalesContext")));
 
-// Dependencia de los repositorios.
-
 // Dependencias del Modulo de Ventas.
 builder.Services.AddVentaDependecy();
 

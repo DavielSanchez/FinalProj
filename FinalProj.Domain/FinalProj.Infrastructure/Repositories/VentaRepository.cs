@@ -1,5 +1,4 @@
 ﻿using FinalProj.Domain.Entities;
-using FinalProj.Domain.Repository;
 using FinalProj.Infrastructure.Context;
 using FinalProj.Infrastructure.Core;
 using FinalProj.Infrastructure.Interfaces;
@@ -27,7 +26,6 @@ namespace FinalProj.Infrastructure.Repositories
         {
             return base.GetEntities().Where(vt => !vt.Eliminado).ToList();
         }
-
         public List<VentaDocTypeModel> GetVentasDocTypes()
         {
             var ventasDocType = (from venta in this.GetEntities()
@@ -50,7 +48,6 @@ namespace FinalProj.Infrastructure.Repositories
 
             return ventasDocType;
         }
-
         public List<VentaDocTypeModel> GetVentasByDocTypesId(int doctypeId)
         {
             var ventasDocType = (from venta in this.GetEntities()
@@ -79,8 +76,7 @@ namespace FinalProj.Infrastructure.Repositories
             return this.GetVentasDocTypes().SingleOrDefault(vt => vt.id == id);
         }
         public override void Save(Venta entity)
-        {
-           
+        {           
             context.Venta.Add(entity);           
             context.SaveChanges();
         }

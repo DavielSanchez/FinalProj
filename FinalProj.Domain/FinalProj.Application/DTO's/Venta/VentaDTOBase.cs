@@ -1,7 +1,4 @@
 ﻿using FinalProj.Application.DTO_s.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FinalProj.Application.DTO_s.Venta
 {

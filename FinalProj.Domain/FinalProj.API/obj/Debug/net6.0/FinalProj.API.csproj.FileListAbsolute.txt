@@ -51,13 +51,14 @@ C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.csproj.CoreCompileInputs.cache
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.MvcApplicationPartsAssemblyInfo.cs
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.MvcApplicationPartsAssemblyInfo.cache
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.sourcelink.json
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets.build.json
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets.development.json
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets\msbuild.FinalProj.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets\msbuild.build.FinalProj.API.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FinalProj.API.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FinalProj.API.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets.pack.json
-C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets.build.json
-C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\staticwebassets.development.json
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\scopedcss\bundle\FinalProj.API.styles.css
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.csproj.CopyComplete
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.API\obj\Debug\net6.0\FinalProj.API.dll

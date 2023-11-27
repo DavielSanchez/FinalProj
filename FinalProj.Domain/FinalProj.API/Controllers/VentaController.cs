@@ -1,11 +1,6 @@
-﻿using FinalProj.API.Models.Modules.Venta;
-using FinalProj.Application.Contracts;
+﻿using FinalProj.Application.Contracts;
 using FinalProj.Application.DTO_s.Venta;
-using FinalProj.Domain.Entities;
-using FinalProj.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace FinalProj.API.Controllers
 {

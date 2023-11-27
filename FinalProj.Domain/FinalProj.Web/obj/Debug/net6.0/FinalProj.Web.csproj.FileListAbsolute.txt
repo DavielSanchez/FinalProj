@@ -13,13 +13,14 @@ C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.RazorAssemblyInfo.cache
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.RazorAssemblyInfo.cs
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.sourcelink.json
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets.build.json
+C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets\msbuild.FinalProj.Web.Microsoft.AspNetCore.StaticWebAssets.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.FinalProj.Web.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FinalProj.Web.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FinalProj.Web.props
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets.pack.json
-C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets.build.json
-C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\scopedcss\bundle\FinalProj.Web.styles.css
 C:\SalesProject\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\scopedcss\projectbundle\FinalProj.Web.bundle.scp.css

@@ -1,8 +1,11 @@
 ﻿using FinalProj.Application.Contracts;
 using FinalProj.Application.Core;
 using FinalProj.Application.DTO_s.Venta;
+using FinalProj.Application.Exceptions;
+using FinalProj.Application.Extensions;
 using FinalProj.Domain.Entities;
 using FinalProj.Infrastructure.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
@@ -13,12 +16,14 @@ namespace FinalProj.Application.Services
     {
         private readonly IVentaRepository ventaRepository;
         private readonly ILogger<VentaService> logger;
+        private readonly IConfiguration configuration;
 
         public VentaService(IVentaRepository ventaRepository,
-                             ILogger<VentaService> logger)
+                             ILogger<VentaService> logger, IConfiguration configuration)
         {
             this.ventaRepository = ventaRepository;
             this.logger = logger;
+            this.configuration = configuration;
         }
         public ServiceResult GetAll()
         {
@@ -57,7 +62,6 @@ namespace FinalProj.Application.Services
             return result;
         }
 
-
         public ServiceResult Remove(VentaDTORemove dtoRemove)
         {
             ServiceResult result = new ServiceResult();
@@ -95,28 +99,14 @@ namespace FinalProj.Application.Services
 
             try
             {
+                var validresult = dtoAdd.IsVentaValid(this.configuration);
 
-                if (dtoAdd.NombreCliente.Length > 20)
+                if (!validresult.Success)
                 {
-                    result.Message = "El nombre del cliente no puede ser mayor a 20 caracteres.";
-                    result.Success = false;
-                    return result;
-                } 
-
-                if(dtoAdd.DocumentoCliente.Length > 10)
-                {
-                    result.Message = "El documento del cliente no puede ser mayor a 10 caracteres.";
-                    result.Success = false;
+                    result.Message = validresult.Message;
+                    result.Success = validresult.Success;
                     return result;
                 }
-
-                if (dtoAdd.SubTotal <= 0)
-                {
-                    result.Message = "El subtotal no puede ser menor a 0.";
-                    result.Success = false;
-                    return result;
-                }
-
 
                 Venta venta = new Venta()
                 {
@@ -139,6 +129,12 @@ namespace FinalProj.Application.Services
 
                 result.Message = "La venta fue guardada correctamente.";
             }
+            catch (VentaServiceException vex)
+            {
+                result.Success = false;
+                result.Message = vex.Message;
+                this.logger.LogError($"{result.Message}", vex.ToString());
+            }
             catch (Exception ex)
             {
 
@@ -157,24 +153,12 @@ namespace FinalProj.Application.Services
             try
             {
 
-                if(dtoUpdate.NombreCliente?.Length > 20)
-                {
-                    result.Message = "El nombre del cliente no puede ser mayor a 20 caracteres.";
-                    result.Success = false;
-                    return result;
-                }
+                var validresult = dtoUpdate.IsVentaValid(this.configuration);
 
-                if (dtoUpdate.DocumentoCliente?.Length > 10)
+                if (!validresult.Success)
                 {
-                    result.Message = "El documento del cliente no puede ser mayor a 10 caracteres.";
-                    result.Success = false;
-                    return result;
-                }
-
-                if(int.TryParse(dtoUpdate.id.ToString(), out int id) == false)
-                {
-                    result.Message = "El id de la venta no es valido.";
-                    result.Success = false;
+                    result.Message = validresult.Message;
+                    result.Success = validresult.Success;
                     return result;
                 }
 

@@ -8,7 +8,7 @@ namespace FinalProj.Application.Exceptions
     {
         public VentaServiceException(string message) : base(message)
         {
-            // realizar x logica //
+            
         }
     }
 }

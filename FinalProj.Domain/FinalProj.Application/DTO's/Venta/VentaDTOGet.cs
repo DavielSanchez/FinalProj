@@ -4,7 +4,6 @@ namespace FinalProj.Application.DTO_s.Venta
 {
     public class VentaDTOGet
     {
-
         public int id { get; set; }
         public int? idTipoDocumentoVenta { get; set; }
         public string? DocumentoCliente { get; set; }

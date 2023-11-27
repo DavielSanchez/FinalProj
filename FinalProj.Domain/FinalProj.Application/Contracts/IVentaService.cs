@@ -1,5 +1,4 @@
-﻿
-using FinalProj.Application.Core;
+﻿using FinalProj.Application.Core;
 using FinalProj.Application.DTO_s.Venta;
 
 namespace FinalProj.Application.Contracts

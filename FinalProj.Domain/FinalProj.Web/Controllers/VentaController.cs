@@ -22,7 +22,7 @@ namespace School.Web.Controllers
         // GET: VentaController
         public ActionResult Index()
         {
-            VentaListResponse studentList = new VentaListResponse();
+            VentaListResponse ventaList = new VentaListResponse();
 
 
             using (var client = new HttpClient(this.clientHandler))
@@ -33,11 +33,11 @@ namespace School.Web.Controllers
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
 
-                        studentList = JsonConvert.DeserializeObject<VentaListResponse>(apiResponse);
+                        ventaList = JsonConvert.DeserializeObject<VentaListResponse>(apiResponse);
 
-                        if (!studentList.success)
+                        if (!ventaList.success)
                         {
-                            ViewBag.Message = studentList.message;
+                            ViewBag.Message = ventaList.message;
                             return View();
                         }
 
@@ -45,22 +45,22 @@ namespace School.Web.Controllers
                     }
                     else
                     {
-                        studentList.message = "Error conectandose al API.";
-                        studentList.success = false;
-                        ViewBag.Message = studentList.message;
+                        ventaList.message = "Error conectandose al API.";
+                        ventaList.success = false;
+                        ViewBag.Message = ventaList.message;
                         return View();
                     }
                 }
             }
 
-            return View(studentList.data);
+            return View(ventaList.data);
         }
 
         // GET: VentaController/Details/5
         public ActionResult Details(int id)
         {
 
-            VentaDetailResponse studentDetailResponse = new VentaDetailResponse();
+            VentaDetailResponse ventaDetailResponse = new VentaDetailResponse();
 
 
             using (var client = new HttpClient(this.clientHandler))
@@ -74,10 +74,10 @@ namespace School.Web.Controllers
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
 
-                        studentDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
+                        ventaDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
 
-                        if (!studentDetailResponse.success)
-                            ViewBag.Message = studentDetailResponse.message;
+                        if (!ventaDetailResponse.success)
+                            ViewBag.Message = ventaDetailResponse.message;
 
 
                     }
@@ -85,7 +85,7 @@ namespace School.Web.Controllers
             }
 
 
-            return View(studentDetailResponse.data);
+            return View(ventaDetailResponse.data);
         }
 
         // GET: VentaController/Create
@@ -151,7 +151,7 @@ namespace School.Web.Controllers
         // GET: VentaController/Edit/5
         public ActionResult Edit(int id)
         {
-            VentaDetailResponse studentDetailResponse = new VentaDetailResponse();
+            VentaDetailResponse ventaDetailResponse = new VentaDetailResponse();
 
 
             using (var client = new HttpClient(this.clientHandler))
@@ -165,14 +165,14 @@ namespace School.Web.Controllers
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
 
-                        studentDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
+                        ventaDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
 
                     }
                 }
             }
 
 
-            return View(studentDetailResponse.data);
+            return View(ventaDetailResponse.data);
         }
 
 

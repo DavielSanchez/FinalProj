@@ -1,5 +1,7 @@
 ﻿using FinalProj.Application.Contracts;
+using FinalProj.Application.Core;
 using FinalProj.Application.DTO_s.Venta;
+using FinalProj.Application.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProj.API.Controllers
@@ -44,11 +46,22 @@ namespace FinalProj.API.Controllers
         [HttpPost("SaveVenta")]
         public IActionResult Post([FromBody] VentaDTOAdd ventaAdd)
         {
-            var result = this.ventaService.Save(ventaAdd);
+            ServiceResult result = new ServiceResult();
 
-            if (!result.Success)
+
+            try
             {
-                return BadRequest(result);
+                result = ventaService.Save(ventaAdd);
+
+                if (!result.Success)
+                    return BadRequest(result);
+
+            }
+            catch (VentaServiceException vsex)
+            {
+
+                result.Message = vsex.Message;
+                result.Success = false;
             }
 
             return Ok(result);

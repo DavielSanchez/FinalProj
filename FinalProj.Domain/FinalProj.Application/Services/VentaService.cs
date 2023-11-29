@@ -42,7 +42,6 @@ namespace FinalProj.Application.Services
             }
             return result;
         }
-
         public ServiceResult GetById(int id)
         {
             ServiceResult result = new ServiceResult();
@@ -61,7 +60,6 @@ namespace FinalProj.Application.Services
 
             return result;
         }
-
         public ServiceResult Remove(VentaDTORemove dtoRemove)
         {
             ServiceResult result = new ServiceResult();
@@ -92,7 +90,6 @@ namespace FinalProj.Application.Services
 
             return result;
         }
-
         public ServiceResult Save(VentaDTOAdd dtoAdd)
         {
             ServiceResult result = new ServiceResult();
@@ -145,7 +142,6 @@ namespace FinalProj.Application.Services
 
             return result;
         }
-
         public ServiceResult Update(VentaDTOUpdate dtoUpdate)
         {
             ServiceResult result = new ServiceResult();

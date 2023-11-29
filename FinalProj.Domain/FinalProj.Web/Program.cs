@@ -1,4 +1,15 @@
+using FinalProj.Infrastructure.Context;
+using FinalProj.IOC.Dependencies;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Contexto
+
+builder.Services.ConfigureSalesContext(builder.Configuration.GetConnectionString("SalesContext"));
+builder.Services.AddVentaDependecy();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -10,7 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // Dependencia del Contexto de la base de datos.
-builder.Services.AddDbContext<SalesContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SalesContext")));
+//builder.Services.AddDbContext<SalesContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SalesContext")));
+builder.Services.ConfigureSalesContext(builder.Configuration.GetConnectionString("SalesContext"));
 
 // Dependencias del Modulo de Ventas.
 builder.Services.AddVentaDependecy();

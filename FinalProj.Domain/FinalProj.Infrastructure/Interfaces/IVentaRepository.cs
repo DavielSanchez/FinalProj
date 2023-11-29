@@ -10,7 +10,6 @@ namespace FinalProj.Infrastructure.Interfaces
 {
     public interface IVentaRepository : IBaseRepository<Venta>
     {
-        // Aqui van los metodos exclusivos de la entidad Venta.
         List<Venta> GetVentasByCliente (string Cliente);
         List<VentaDocTypeModel> GetVentasDocTypes();
         List<VentaDocTypeModel> GetVentasByDocTypesId(int doctypeId);

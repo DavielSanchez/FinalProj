@@ -6,6 +6,7 @@ namespace FinalProj.Application.DTO_s.Venta
     {
         public int id { get; set; }
         public int? idTipoDocumentoVenta { get; set; }
+        public string? TipoDocumento { get; set; }
         public string? DocumentoCliente { get; set; }
         public string? NombreCliente { get; set; }
         public decimal? SubTotal { get; set; }

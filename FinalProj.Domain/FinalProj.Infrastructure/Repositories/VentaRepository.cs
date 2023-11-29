@@ -42,7 +42,6 @@ namespace FinalProj.Infrastructure.Repositories
                                         ImpuestoTotal = venta.ImpuestoTotal,
                                         Total = venta.Total,
                                         FechaRegistro = venta.FechaRegistro,
-                                        // Nombre del tipo de documento 
                                         TipoDocumento = tipoDocumento.Descripcion,
                                     }).ToList();
 

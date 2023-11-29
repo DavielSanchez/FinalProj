@@ -1,41 +1,8 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-<body>
-    <h1>Generador de Enlaces Temporales</h1>
-
-    <form id="formulario">
-        <!-- Agrega los campos que necesitas en tu formulario -->
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <!-- Otros campos del formulario -->
-
-        <button type="button" onclick="generarEnlace()">Generar Enlace</button>
-    </form>
-
-    <div id="resultado"></div>
-
-    <script>
-        function generarEnlace() {
-            // Obtén los valores del formulario
-            var nombre = document.getElementById('nombre').value;
-            var correo = document.getElementById('correo').value;
-
-            // Puedes agregar más campos según tus necesidades
-
-            // Genera un enlace único utilizando una combinación de valores
-            var enlaceTemporal = 'https://forms.gle/VaycHsz8kTGD2R4E6' + encodeURIComponent(nombre) + '&correo=' + encodeURIComponent(correo);
-
-            // Muestra el enlace en la página
-            document.getElementById('resultado').innerHTML = '<p>Enlace temporal generado: <a href="' + enlaceTemporal + '" target="_blank">' + enlaceTemporal + '</a></p>';
-        }
-    </script>
-</body>

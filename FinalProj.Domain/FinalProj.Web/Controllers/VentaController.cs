@@ -66,7 +66,7 @@ namespace School.Web.Controllers
             using (var client = new HttpClient(this.clientHandler))
             {
 
-                var url = $"http://localhost:5240/api/Venta/GetVenta?id={id}";
+                var url = $"http://localhost:5240/api/Venta/GetVenta?id={ id }";
 
                 using (var response = client.GetAsync(url).Result)
                 {
@@ -77,8 +77,8 @@ namespace School.Web.Controllers
                         ventaDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
 
                         if (!ventaDetailResponse.success)
-                            ViewBag.Message = ventaDetailResponse.message;
 
+                            ViewBag.Message = ventaDetailResponse.message;
 
                     }
                 }
@@ -99,60 +99,59 @@ namespace School.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(VentaDTOAdd ventaDTOAdd)
         {
-            BaseResponse baseResponse = new BaseResponse();
+            //BaseResponse baseResponse = new BaseResponse();
 
-            try
-            {
+            //try
+            //{
 
-                using (var client = new HttpClient(this.clientHandler))
-                {
+            //    using (var client = new HttpClient(this.clientHandler))
+            //    {
 
-                    var url = $"http://localhost:5240/api/Venta/SaveVenta";
+            //        var url = $"http://localhost:5240/api/Venta/SaveVenta";
 
-                    ventaDTOAdd.ChangeDate = DateTime.Now;
-                    ventaDTOAdd.ChangeUser = 1;
+            //        ventaDTOAdd.ChangeDate = DateTime.Now;
+            //        ventaDTOAdd.ChangeUser = 1;
 
-                    StringContent content = new StringContent(JsonConvert.SerializeObject(ventaDTOAdd), System.Text.Encoding.UTF8, "application/json");
+            //        StringContent content = new StringContent(JsonConvert.SerializeObject(ventaDTOAdd), System.Text.Encoding.UTF8, "application/json");
 
-                    using (var response = client.PostAsync(url, content).Result)
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            string apiResponse = response.Content.ReadAsStringAsync().Result;
+            //        using (var response = client.PostAsync(url, content).Result)
+            //        {
+            //            if (response.IsSuccessStatusCode)
+            //            {
+            //                string apiResponse = response.Content.ReadAsStringAsync().Result;
 
-                            baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
+            //                baseResponse = JsonConvert.DeserializeObject<BaseResponse>(apiResponse);
 
-                            if (!baseResponse.success)
-                            {
-                                ViewBag.Message = baseResponse.message;
-                                return View();
-                            }
+            //                if (!baseResponse.success)
+            //                {
+            //                    ViewBag.Message = baseResponse.message;
+            //                    return View();
+            //                }
 
-                        }
-                        else
-                        {
-                            baseResponse.message = "Error conectandose al API.";
-                            baseResponse.success = false;
-                            ViewBag.Message = baseResponse.message;
-                            return View();
-                        }
-                    }
-                }
+            //            }
+            //            else
+            //            {
+            //                baseResponse.message = "Error conectandose al API.";
+            //                baseResponse.success = false;
+            //                ViewBag.Message = baseResponse.message;
+            //                return View();
+            //            }
+            //        }
+            //    }
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                ViewBag.Message = baseResponse.message;
-                return View();
-            }
+               return RedirectToAction(nameof(Index));
+            //}
+            //catch
+            //{
+            //    ViewBag.Message = baseResponse.message;
+            //    return View();
+            //}
         }
 
         // GET: VentaController/Edit/5
         public ActionResult Edit(int id)
         {
             VentaDetailResponse ventaDetailResponse = new VentaDetailResponse();
-
 
             using (var client = new HttpClient(this.clientHandler))
             {
@@ -168,6 +167,7 @@ namespace School.Web.Controllers
                         ventaDetailResponse = JsonConvert.DeserializeObject<VentaDetailResponse>(apiResponse);
 
                     }
+
                 }
             }
 
@@ -189,7 +189,7 @@ namespace School.Web.Controllers
                 using (var client = new HttpClient(this.clientHandler))
                 {
 
-                    var url = $"http://localhost:5214/api/Student/UpdateStudent";
+                    var url = $"http://localhost:5240/api/Venta/UpdateVenta";
 
                     ventaDTOUpdate.ChangeDate = DateTime.Now;
                     ventaDTOUpdate.ChangeUser = 1;
@@ -228,6 +228,7 @@ namespace School.Web.Controllers
                 return View();
             }
         }
+
 
 
     }

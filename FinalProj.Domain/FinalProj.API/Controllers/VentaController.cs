@@ -48,7 +48,6 @@ namespace FinalProj.API.Controllers
         {
             ServiceResult result = new ServiceResult();
 
-
             try
             {
                 result = ventaService.Save(ventaAdd);

@@ -4,6 +4,7 @@ using FinalProj.Infrastructure.Interfaces;
 using FinalProj.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using FinalProj.IOC.Dependencies;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 

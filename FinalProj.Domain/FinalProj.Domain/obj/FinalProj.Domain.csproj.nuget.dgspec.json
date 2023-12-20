@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj": {}
+    "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj": {}
   },
   "projects": {
-    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj": {
+    "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj",
         "projectName": "FinalProj.Domain",
-        "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj",
+        "projectPath": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Domain\\FinalProj.Domain.csproj",
         "packagesPath": "C:\\Users\\Samil Quezada Suriel\\.nuget\\packages\\",
-        "outputPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Samil Quezada Suriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

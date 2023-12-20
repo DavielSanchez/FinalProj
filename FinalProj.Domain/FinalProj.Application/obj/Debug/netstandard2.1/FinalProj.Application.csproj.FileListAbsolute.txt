@@ -1,0 +1,4 @@
+C:\Sales\FinalProj.Domain\FinalProj.Application\obj\Debug\netstandard2.1\FinalProj.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sales\FinalProj.Domain\FinalProj.Application\obj\Debug\netstandard2.1\FinalProj.Application.AssemblyInfoInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.Application\obj\Debug\netstandard2.1\FinalProj.Application.AssemblyInfo.cs
+C:\Sales\FinalProj.Domain\FinalProj.Application\obj\Debug\netstandard2.1\FinalProj.Application.csproj.CoreCompileInputs.cache

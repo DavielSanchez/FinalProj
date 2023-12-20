@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FinalProj.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalProj.Infrastructure.Context
 {
@@ -6,7 +7,10 @@ namespace FinalProj.Infrastructure.Context
     {
         public SalesContext(DbContextOptions<SalesContext> options) : base(options)
         {
+
         }
+
+        public DbSet<Producto> Productos { get; set; }
     
     }
 }

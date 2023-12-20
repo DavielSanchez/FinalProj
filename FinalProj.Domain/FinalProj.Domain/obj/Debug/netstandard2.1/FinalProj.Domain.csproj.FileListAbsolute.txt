@@ -7,3 +7,12 @@ C:\SalesProject\FinalProj\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandar
 C:\SalesProject\FinalProj\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.csproj.CoreCompileInputs.cache
 C:\SalesProject\FinalProj\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.dll
 C:\SalesProject\FinalProj\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.pdb
+C:\Sales\FinalProj.Domain\FinalProj.Domain\bin\Debug\netstandard2.1\FinalProj.Domain.deps.json
+C:\Sales\FinalProj.Domain\FinalProj.Domain\bin\Debug\netstandard2.1\FinalProj.Domain.dll
+C:\Sales\FinalProj.Domain\FinalProj.Domain\bin\Debug\netstandard2.1\FinalProj.Domain.pdb
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.AssemblyInfoInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.AssemblyInfo.cs
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.csproj.CoreCompileInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.dll
+C:\Sales\FinalProj.Domain\FinalProj.Domain\obj\Debug\netstandard2.1\FinalProj.Domain.pdb

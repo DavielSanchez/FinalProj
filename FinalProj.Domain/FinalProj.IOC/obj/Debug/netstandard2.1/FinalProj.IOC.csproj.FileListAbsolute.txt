@@ -1,0 +1,9 @@
+C:\Sales\FinalProj.Domain\FinalProj.IOC\bin\Debug\netstandard2.1\FinalProj.IOC.deps.json
+C:\Sales\FinalProj.Domain\FinalProj.IOC\bin\Debug\netstandard2.1\FinalProj.IOC.dll
+C:\Sales\FinalProj.Domain\FinalProj.IOC\bin\Debug\netstandard2.1\FinalProj.IOC.pdb
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.AssemblyInfoInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.AssemblyInfo.cs
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.csproj.CoreCompileInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.dll
+C:\Sales\FinalProj.Domain\FinalProj.IOC\obj\Debug\netstandard2.1\FinalProj.IOC.pdb

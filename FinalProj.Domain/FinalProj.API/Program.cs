@@ -1,6 +1,22 @@
+using FinalProj.Domain.Repository;
+using FinalProj.Infrastructure.Context;
+using FinalProj.Infrastructure.Interfaces;
+using FinalProj.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+using FinalProj.IOC.Dependencies;
+using System.Net;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Dependencia del Contexto de la base de datos.
+//builder.Services.AddDbContext<SalesContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SalesContext")));
+builder.Services.ConfigureSalesContext(builder.Configuration.GetConnectionString("SalesContext"));
+
+// Dependencias del Modulo de Producto.
+builder.Services.AddProductoDependecy();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

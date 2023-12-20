@@ -1,20 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj": {}
+    "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj": {}
   },
   "projects": {
-    "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj": {
+    "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj",
         "projectName": "FinalProj.Web",
-        "projectPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj",
+        "projectPath": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Web\\FinalProj.Web.csproj",
         "packagesPath": "C:\\Users\\Samil Quezada Suriel\\.nuget\\packages\\",
-        "outputPath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Web\\obj\\",
+        "outputPath": "C:\\Users\\Samil Quezada Suriel\\source\\repos\\DavielSanchez\\Sales\\FinalProj.Domain\\FinalProj.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Samil Quezada Suriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

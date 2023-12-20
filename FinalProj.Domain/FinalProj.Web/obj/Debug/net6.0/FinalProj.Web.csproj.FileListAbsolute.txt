@@ -1,0 +1,7 @@
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.AssemblyInfoInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.AssemblyInfo.cs
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.csproj.CoreCompileInputs.cache
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.RazorAssemblyInfo.cache
+C:\Sales\FinalProj.Domain\FinalProj.Web\obj\Debug\net6.0\FinalProj.Web.RazorAssemblyInfo.cs

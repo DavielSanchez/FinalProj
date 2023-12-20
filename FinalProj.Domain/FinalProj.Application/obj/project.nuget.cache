@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RtUpXTSuKwfhhDNUrG1IEyXqrsqc72H0sp4eNBqpFNbip0rYlb/8+gPVaLurlmTayMHomdSZLoRa7fz+8DkjwA==",
+  "dgSpecHash": "ntxDfoGXpJGeHdPCRY66AeFTEnmeJbWt2JS058tkTHaHES4PLZTmbTq/cvNKEO8PRfd46ZBWu1nWFrdisbcp7g==",
   "success": true,
-  "projectFilePath": "C:\\SalesProject\\Sales\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj",
+  "projectFilePath": "C:\\Sales\\FinalProj.Domain\\FinalProj.Application\\FinalProj.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
